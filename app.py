@@ -42,7 +42,8 @@ textarea:focus,input:focus{border-color:#0056b3}
        text-align:center;transition:all .2s;user-select:none;background:#fafafa}
 .pcard:hover{border-color:#0056b3;background:#f0f7ff}
 .pcard.active{border-color:#0056b3;background:#e8f4fd}
-.pcard .icon{font-size:1.5rem;display:block;margin-bottom:4px}
+.pcard .icon{font-size:1.5rem;display:flex;align-items:center;justify-content:center;height:36px;margin-bottom:6px}
+.pcard .icon img{display:block}
 .pcard .name{font-size:.82rem;font-weight:700;color:#333}
 .pcard .sub2{font-size:.72rem;color:#777;margin-top:2px}
 .key-wrap{position:relative}
@@ -90,17 +91,23 @@ button.primary:disabled{background:#aaa;cursor:not-allowed}
     <label>AI Provider</label>
     <div class="provider-grid">
       <div class="pcard" id="p-claude" onclick="selectProvider('claude')">
-        <span class="icon">🤖</span>
+        <span class="icon">
+          <img src="https://cdn.simpleicons.org/anthropic/191919" width="32" height="32" alt="Anthropic" onerror="this.replaceWith('🤖')">
+        </span>
         <div class="name">Claude</div>
         <div class="sub2">Anthropic</div>
       </div>
       <div class="pcard" id="p-openai" onclick="selectProvider('openai')">
-        <span class="icon">💬</span>
+        <span class="icon">
+          <img src="https://cdn.simpleicons.org/chatgpt/191919" width="32" height="32" alt="ChatGPT" onerror="this.replaceWith('💬')">
+        </span>
         <div class="name">ChatGPT</div>
         <div class="sub2">OpenAI</div>
       </div>
       <div class="pcard" id="p-gemini" onclick="selectProvider('gemini')">
-        <span class="icon">✨</span>
+        <span class="icon">
+          <img src="https://cdn.simpleicons.org/googlegemini/191919" width="32" height="32" alt="Gemini" onerror="this.replaceWith('✨')">
+        </span>
         <div class="name">Gemini</div>
         <div class="sub2">Google</div>
       </div>
