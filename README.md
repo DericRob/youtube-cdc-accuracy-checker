@@ -8,7 +8,6 @@ Checks YouTube health videos against official CDC.gov pages — claim by claim. 
 ```bash
 cd ~/Documents/CDC
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=sk-ant-...
 python app.py
 ```
 
