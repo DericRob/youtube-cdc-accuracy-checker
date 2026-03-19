@@ -4,6 +4,8 @@ Docs: https://tools.cdc.gov/api/docs/info.aspx
 Free, no authentication required.
 """
 
+from __future__ import annotations
+
 import requests
 from bs4 import BeautifulSoup
 

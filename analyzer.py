@@ -5,6 +5,8 @@ Multi-provider AI analysis:
   2. Compare claims against CDC authoritative content
 """
 
+from __future__ import annotations
+
 import json
 
 PROVIDERS = {

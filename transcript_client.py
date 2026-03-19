@@ -5,6 +5,8 @@ Primary: youtube-transcript-api (InnerTube, no API key)
 Fallback: yt-dlp subtitle download
 """
 
+from __future__ import annotations
+
 import re
 import subprocess
 import os

@@ -3,6 +3,8 @@ Background job processor.
 Handles: single video, list of videos, or a full playlist.
 """
 
+from __future__ import annotations
+
 import threading
 import traceback
 import uuid

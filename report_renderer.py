@@ -6,6 +6,8 @@ Each report explicitly shows:
   - Exact CDC URL and page title used for comparison
 """
 
+from __future__ import annotations
+
 from pathlib import Path
 from datetime import datetime, timezone
 import html as _html
